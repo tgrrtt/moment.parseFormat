@@ -30,7 +30,7 @@
   var regexFirstSecondThirdFourth = /(\d+)(st|nd|rd|th)\b/i;
   var regexEndian = /(\d{1,4})([\/\.\-])(\d{1,2})[\/\.\-](\d{1,4})/;
 
-  var regexTimezone = /((\+|\-)\d\d:\d\d)$/;
+  var regexTimezone = /(\+|\-)\d\d:\d\d$/;
   var amOrPm = '('+[amDesignator,pmDesignator].join('|')+')';
   var regexHoursWithLeadingZeroDigitMinutesSecondsAmPm = new RegExp( '0\\d\\:\\d{1,2}\\:\\d{1,2}(\\s*)' + amOrPm,  'i' );
   var regexHoursWithLeadingZeroDigitMinutesAmPm = new RegExp( '0\\d\\:\\d{1,2}(\\s*)' + amOrPm,  'i' );
